@@ -3,26 +3,27 @@
 
 <head>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>DangVanAnhs Links</title>
-  <meta name="description" content="DangVanAnhs Link ">
+  <title>Anhs Links</title>
+  <meta name="description" content="Anhs Link ">
   <meta property="og:url" content="https://anhutc.github.io/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="DangVanAnhs Links">
-  <meta property="og:description" content="DangVanAnhs Link ">
+  <meta property="og:title" content="Anhs Links">
+  <meta property="og:description" content="Anhs Link ">
   <meta property="og:image"
     content="https://iad.microlink.io/Nsm47ZAe34rhYlPEt2ZDU0gIJxllYTxavvLVVN0_YH39SM43-6Js36r4NoH3KHkOPs35m2wcFVVPazTOhEvCjQ.jpeg">
   <script defer="defer" src="assets/js/main.js"></script>
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 </head>
 
 <body data-theme="dark" cz-shortcut-listen="true">
-  <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root">
     <div class="App">
       <div class="Header container">
         <div class="ten columns Header__inner">
           <img src="assets/img/avata.jfif" alt="avatar">&nbsp;&nbsp;&nbsp; <h2>
-            <b>DangVanAnhs. </b>
+            <b>Anhs. </b>
           </h2>
         </div>
         <button class="switch-theme-button">
@@ -41,53 +42,8 @@
           </svg>
         </button>
       </div>
-      <div class="container row">
-        <a href="https://github.com/anhutc" target="_blank" rel="noopener noreferrer">
-          <div class="Card four columns" style="opacity: 1; transform: none;">
-            <img class="cover" src="assets/img/github.png" alt="">
-            <div class="data">
-              <h2>GitHub</h2>
-              <p>@anhutc | 🏡 to all my open-source projects</p>
-            </div>
-          </div>
-        </a>
-        <a href="https://instagram.com/dangvananhs" target="_blank" rel="noopener noreferrer">
-          <div class="Card four columns" style="opacity: 1; transform: none;">
-            <img class="cover" src="assets/img/instagram.png" alt="">
-            <div class="data">
-              <h2>Instagram</h2>
-              <p>@dangvananhs | Shots of my life 🙂</p>
-            </div>
-          </div>
-        </a>
-        <a href="https://www.linkedin.com/in/dangvananhs/" target="_blank" rel="noopener noreferrer">
-          <div class="Card four columns" style="opacity: 1; transform: none;">
-            <img class="cover" src="assets/img/linkedin.jfif" alt="">
-            <div class="data">
-              <h2>LinkedIn</h2>
-              <p>Know more about my profession 👨‍💼</p>
-            </div>
-          </div>
-        </a>
-        <a href="https://www.youtube.com/https://www.youtube.com/@dangvananhs" target="_blank"
-          rel="noopener noreferrer">
-          <div class="Card four columns" style="opacity: 1; transform: none;">
-            <img class="cover" src="assets/img/youtube.jfif" alt="">
-            <div class="data">
-              <h2>YouTube</h2>
-              <p>Ánh Đặng | Official channel of mine</p>
-            </div>
-          </div>
-        </a>
-        <a href="https://telegram.me/heysagnik" target="_blank" rel="noopener noreferrer">
-          <div class="Card four columns" style="opacity: 1; transform: none;">
-            <img class="cover" src="assets/img/telegram.png" alt="">
-            <div class="data">
-              <h2>Telegram</h2>
-              <p>@dangvananhs | Chat with me instantly </p>
-            </div>
-          </div>
-        </a>
+      <div class="container row" id="views">
+
       </div>
       <div class="Footer container">
         <p>From with love <span class="heart">❤️</span><a href="/">Bắc Ninh</a>
@@ -95,6 +51,28 @@
       </div>
     </div>
   </div>
+
+  <script type="text/javascript">
+
+    $.getJSON('data.json', function (data) {
+      // console.log(data[1].u);
+      var entry = data[Math.floor(Math.random() * data.length)];
+      $('#views').empty().hide();
+
+      $.each(data, function (entryIndex, entry) {
+        var html = '<a href=' + empty.url + '" target="_blank" rel="noopener noreferrer">';
+        html += '<div class="Card four columns" style="opacity: 1; transform: none;">';
+        html += '<img class="cover" src="' + empty.img + '" alt="' + empty.title + '">';
+        html += '<div class="data">';
+        html += '<h2>' + empty.title + '</h2>';
+        html += '<p>' + empty.description + '</p></div></div></a>';
+
+        $('#views').append(html).fadeIn();
+      });
+    });
+
+  </script>
+
 </body>
 
 </html>
