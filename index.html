@@ -3,7 +3,8 @@
 
 <head>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Anhs Links</title>
+  <title>Anhs.</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/avata.jfif">
   <meta name="description" content="Anhs Link ">
   <meta property="og:url" content="https://anhutc.github.io/">
   <meta property="og:type" content="website">
@@ -11,23 +12,23 @@
   <meta property="og:description" content="Anhs Link ">
   <meta property="og:image"
     content="https://iad.microlink.io/Nsm47ZAe34rhYlPEt2ZDU0gIJxllYTxavvLVVN0_YH39SM43-6Js36r4NoH3KHkOPs35m2wcFVVPazTOhEvCjQ.jpeg">
-  <script defer="defer" src="assets/js/main.js"></script>
   <link rel="stylesheet" href="assets/css/style.css">
 
   <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  <script src="assets/js/mode.js"></script>
 </head>
 
-<body data-theme="dark" cz-shortcut-listen="true">
+<body data-theme="dark" id="webPage">
   <div id="root">
     <div class="App">
       <div class="Header container">
         <div class="ten columns Header__inner">
           <img src="assets/img/avata.jfif" alt="avatar">&nbsp;&nbsp;&nbsp; <h2>
-            <b>Anhs. </b>
+            <b>Anhs.</b>
           </h2>
         </div>
-        <button class="switch-theme-button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        <button class="switch-theme-button" onclick="darkMode()">
+          <svg id="darkMode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="feather feather-sun" color="white">
             <circle cx="12" cy="12" r="5"></circle>
@@ -39,6 +40,11 @@
             <line x1="21" y1="12" x2="23" y2="12"></line>
             <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
             <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="lightMode" class="hide" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-moon">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
         </button>
       </div>
@@ -80,7 +86,7 @@
 
       for (let i = 0; i < datarandom.length; i++) {
 
-        var html = '<a href=' + datarandom[i].url + '" target="_blank" rel="noopener noreferrer">';
+        var html = '<a href="' + datarandom[i].url + '" target="_blank" rel="noopener noreferrer">';
         html += '<div class="Card four columns" style="opacity: 1; transform: none;">';
         html += '<img class="cover" src="' + datarandom[i].img + '" alt="' + datarandom[i].title + '">';
         html += '<div class="data">';

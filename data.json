@@ -3,18 +3,42 @@
         "url": "https://github.com/anhutc",
         "img": "assets/img/github.png",
         "title": "GitHub",
-        "description": "@anhutc | 🏡 to all my open-source projects"
+        "description": "@anhutc | Nơi lưu trữ dự án"
     },
     {
-        "url": "https://www.instagram.com/dangvananhs/",
+        "url": "https://www.instagram.com/dangvananhs",
         "img": "assets/img/instagram.png",
         "title": "Instagram",
-        "description": "@dangvananhs | Shots of my life 🙂"
+        "description": "@dangvananhs | Ảnh của tui"
     },
     {
         "url": "https:/www.youtube.com/@dangvananhs",
         "img": "assets/img/youtube.jfif",
         "title": "Youtube",
-        "description": "Ánh Đặng | Official channel of mine"
+        "description": "@dangvananh | Kênh chính thức của tui"
+    },
+    {
+        "url": "https:/www.youtube.com/@dangvananhs",
+        "img": "assets/img/facebook.png",
+        "title": "Facebook",
+        "description": "@dangvananhs | Trò chuyện với tôi"
+    },
+    {
+        "url": "https:/www.youtube.com/@dangvananhs",
+        "img": "assets/img/tiktok.jpg",
+        "title": "Tiktok",
+        "description": "@dangvananhs | Video ngắn của tui"
+    },
+    {
+        "url": "https:/www.youtube.com/@dangvananhs",
+        "img": "assets/img/linkedin.jfif",
+        "title": "Linkedin",
+        "description": "@dangvananhs | Đặng Văn Ánh"
+    },
+    {
+        "url": "https://anhutc.github.io/repo",
+        "img": "assets/img/website.png",
+        "title": "Website",
+        "description": "Anh_UTC | Repository"
     }
 ]
