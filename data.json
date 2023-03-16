@@ -36,6 +36,12 @@
         "description": "@dangvananhs | Đặng Văn Ánh"
     },
     {
+        "url": "https://anhutc.github.io/cv",
+        "img": "assets/img/cv.png",
+        "title": "CV",
+        "description": "Đặng Văn Anhs | Curriculum Vitae"
+    },
+    {
         "url": "https://anhutc.github.io/repo",
         "img": "assets/img/website.png",
         "title": "Website",
