@@ -30,12 +30,6 @@
         "description": "@dangvananhs | Video ngắn của tui"
     },
     {
-        "url": "https://www.linkedin.com/in/dangvananhs",
-        "img": "assets/img/linkedin.jfif",
-        "title": "Linkedin",
-        "description": "@dangvananhs | Đặng Văn Ánh"
-    },
-    {
         "url": "https://anhutc.github.io/cv",
         "img": "assets/img/cv.png",
         "title": "CV",
@@ -44,7 +38,7 @@
     {
         "url": "https://anhutc.github.io/repo",
         "img": "assets/img/website.png",
-        "title": "Website",
+        "title": "Repository",
         "description": "Anh_UTC | Repository"
     }
 ]
