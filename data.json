@@ -3,42 +3,42 @@
         "url": "https://github.com/anhutc",
         "img": "assets/img/github.png",
         "title": "GitHub",
-        "description": "@anhutc | Nơi lưu trữ dự án"
+        "description": "anhutc"
     },
     {
         "url": "https://www.instagram.com/dangvananhs",
         "img": "assets/img/instagram.png",
         "title": "Instagram",
-        "description": "@dangvananhs | Ảnh của tui"
+        "description": "dangvananhs"
     },
     {
         "url": "https://www.youtube.com/@dangvananhs",
         "img": "assets/img/youtube.jfif",
         "title": "Youtube",
-        "description": "@dangvananh | Kênh chính thức của tui"
+        "description": "@dangvananh"
     },
     {
         "url": "https://www.facebook.com/dangvananhs",
         "img": "assets/img/facebook.png",
         "title": "Facebook",
-        "description": "@dangvananhs | Trò chuyện với tôi"
+        "description": "dangvananhs"
     },
     {
         "url": "https://www.tiktok.com/@dangvananhs",
         "img": "assets/img/tiktok.jpg",
         "title": "Tiktok",
-        "description": "@dangvananhs | Video ngắn của tui"
+        "description": "@dangvananhs"
     },
     {
         "url": "https://anhutc.github.io/cv",
         "img": "assets/img/cv.png",
-        "title": "CV",
-        "description": "Đặng Văn Ánh | Curriculum Vitae"
+        "title": "Curriculum Vitae",
+        "description": "Đặng Văn Ánh"
     },
     {
         "url": "https://anhutc.github.io/repo",
         "img": "assets/img/website.png",
         "title": "Repository",
-        "description": "Anh_UTC | Repository"
+        "description": "Anh_UTC"
     }
 ]
