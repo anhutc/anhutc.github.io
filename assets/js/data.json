@@ -13,7 +13,7 @@
     },
     {
         "url": "https://www.youtube.com/@dangvananhs",
-        "img": "assets/img/youtube.jfif",
+        "img": "assets/img/youtube.jpg",
         "title": "Youtube",
         "description": "@dangvananh"
     },
@@ -40,5 +40,11 @@
         "img": "assets/img/website.png",
         "title": "Repo Jailbreak",
         "description": "Anh_UTC"
+    },
+    {
+        "url": "https://zalo.me/0971492399",
+        "img": "assets/img/zalo.png",
+        "title": "Zalo",
+        "description": "@0971492399"
     }
 ]
