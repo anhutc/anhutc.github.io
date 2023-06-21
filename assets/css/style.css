@@ -1032,7 +1032,6 @@ img {
   width: 46px;
   height: 46px;
   border-radius: 75%;
-  margin-top: 10px;
 }
 .row {
   align-items: center;
@@ -1127,4 +1126,5 @@ display: none;
 
 .header__inner h2 {
   margin-left: 1rem;
+  font-size: 200%;
 }
