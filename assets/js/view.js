@@ -22,7 +22,8 @@ $.getJSON('assets/js/data.json', function (data) {
 
   $('#views').empty().hide();
 
-  for (let i = 0; i < datarandom.length; i++) {
+  for (let i = 0; i < 
+    datarandom.length; i++) {
 
     var html = '<a href="' + datarandom[i].url + '" target="_blank" rel="noopener">';
     html += '<div class="Card four columns" style="opacity: 1; transform: none;">';
@@ -35,3 +36,26 @@ $.getJSON('assets/js/data.json', function (data) {
   };
 
 });
+
+
+
+
+// Get the button
+let mybutton = document.getElementById("btn-top");
+    
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}

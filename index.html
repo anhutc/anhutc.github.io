@@ -1,67 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Anhs.</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/icon-web.png" />
+    <meta
+      name="description"
+      content="Đây là website tổng hợp các trang mạng xã hôi của Đặng Văn Ánh"
+    />
+    <meta
+      name="keywords"
+      content="Đặng Văn Ánh, dva, dang van anh, fb dang van anh, zalo dang van anh, youtube dang van anh, linktree dang van anh, tiktok dang van anh"
+    />
+    <meta property="og:url" content="https://anhutc.github.io/" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Anhs." />
+    <meta property="og:locale" content="vi_VN" />
+    <meta
+      property="og:description"
+      content="Đây là website tổng hợp các trang mạng xã hôi của Đặng Văn Ánh"
+    />
+    <meta
+      name="google-site-verification"
+      content="C5sHElGAkwBg8jZgdlhlvGebCi-LPAI03H9ABfTdLL4"
+    />
+    <meta
+      property="og:image"
+      content="http://image.thum.io/get/ogImage/https://anhutc.github.io"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-<head>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Anhs.</title>
-  <link rel="icon" type="image/x-icon" href="assets/img/icon-web.png">
-  <meta name="description" content="Đây là website tổng hợp các trang mạng xã hôi của Đặng Văn Ánh">
-  <meta name="keywords" content="Đặng Văn Ánh, dva, dang van anh, fb dang van anh, zalo dang van anh, youtube dang van anh, linktree dang van anh, tiktok dang van anh">
-  <meta property="og:url" content="https://anhutc.github.io/">
-  <meta property="og:type" content="profile">
-  <meta property="og:title" content="Anhs.">
-  <meta property="og:locale" content="vi_VN" />
-  <meta property="og:description" content="Đây là website tổng hợp các trang mạng xã hôi của Đặng Văn Ánh">
-  <meta name="google-site-verification" content="C5sHElGAkwBg8jZgdlhlvGebCi-LPAI03H9ABfTdLL4" />
-  <meta property="og:image" content="http://image.thum.io/get/ogImage/https://anhutc.github.io" />
-  <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="assets/js/mode.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
-  <script src="assets/js/mode.js"></script>
-</head>
+  </head>
 
-<body data-theme="dark" id="webPage">
-  <div id="root">
-    <div class="App">
-      <div class="Header container">
-        <div class="ten columns Header__inner">
-          <img src="assets/img/logo.jpg" alt="logo">&nbsp;&nbsp;&nbsp; <h2>
-            <b>Anhs.</b>
-          </h2>
-        </div>
-        <button class="switch-theme-button" onclick="darkMode()">
-          <svg id="darkMode" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="feather feather-sun" color="white">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-          <svg id="lightMode" class="hide" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="feather feather-moon">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-        </button>
-      </div>
-      <div class="container row" id="views">
+  <body data-theme="dark" id="webPage">
+    <div id="root">
+      <div class="app">
+        <header>
+          <div class="header container">
+            <div class="columns header__inner">
+              <img src="assets/img/logo.jpg" alt="logo" />
+              <h2>
+                <b>Anhs.</b>
+              </h2>
+            </div>
+          </div>
+        </header>
 
-      </div>
-      <div class="Footer container">
-        <p>From <a href="/">Bắc Ninh</a> with love <span class="heart">❤️</span>
-        </p>
+        <div class="container row" id="views"></div>
+
+        <footer>
+          <div class="footer container">
+            <p>
+              From <a href="/">Bắc Ninh</a> with love
+              <span class="heart">❤️</span>
+            </p>
+          </div>
+          <div id="footer-tools" class="d-flex flex-column">
+            <a class="btn" style="display: none;" id="btn-top" onclick="topFunction()" title="Go to top">
+              <i class="fa-solid fa-angles-up"></i>
+            </a>
+            <a onclick="darkMode()" class="btn" title="Mode website">
+              <i class="fa-solid fa-gear"></i>
+            </a>
+          </div>
+        </footer>
       </div>
     </div>
-  </div>
-
-<script src="assets/js/view.js"></script>
-
-</body>
-
+  </body>
+  <script src="assets/js/view.js"></script>
 </html>
