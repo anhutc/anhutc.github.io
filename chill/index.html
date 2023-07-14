@@ -14,86 +14,12 @@
   
     
     <title>CodePen - Bongo Cat Codes #2 - Jamming</title>
-      <link rel="canonical" href="https://codepen.io/carolineartz/pen/qBOEzQa">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   
     
     
-  <style>
-  :root {
-    --bg: #1a1e2d;
-    --green: #a5ea9b;
-    --pink: #ff61d8;
-    --blue: #569cfa;
-    --orange: #ffcc81;
-    --cyan: #7ed1e2;
-  }
-  
-  body {
-    height: 100vh;
-    width: 100vw;
-    background: var(--bg);
-    display: flex;
-    place-content: center;
-    align-items: flex-end;
-    overflow: hidden;
-  }
-  
-  .container {
-    width: 80vw;
-    height: 80vh;
-  }
-  .container svg {
-    height: 100%;
-    width: 100%;
-    overflow: visible;
-  }
-  
-  #bongo-cat {
-    fill: var(--bg);
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 4;
-  }
-  #bongo-cat .laptop-cover,
-  #bongo-cat .headphone .band {
-    fill: none;
-  }
-  #bongo-cat .paw, #bongo-cat .head {
-    stroke: var(--orange);
-  }
-  #bongo-cat .laptop-keyboard {
-    stroke-width: 2;
-  }
-  #bongo-cat .terminal-code {
-    stroke-width: 5;
-  }
-  #bongo-cat .music .note,
-  #bongo-cat .laptop-base,
-  #bongo-cat .laptop-cover,
-  #bongo-cat .paw .pads {
-    stroke: var(--pink);
-  }
-  #bongo-cat .table line,
-  #bongo-cat .headphone .band,
-  #bongo-cat .headphone .speaker path:nth-child(3) {
-    stroke: var(--green);
-  }
-  #bongo-cat .terminal-frame,
-  #bongo-cat .laptop-keyboard,
-  #bongo-cat .headphone .speaker path:nth-child(2) {
-    stroke: var(--blue);
-  }
-  #bongo-cat .terminal-code,
-  #bongo-cat .headphone .speaker path:first-child {
-    stroke: var(--cyan);
-  }
-  </style>
-  
-    <script>
-    window.console = window.console || function(t) {};
-  </script>
+  <link rel="stylesheet" href="style.css">
   
     
     
@@ -466,98 +392,7 @@
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
-        <script id="rendered-js">
-  "use strict";
-  // Inspired By
-  // https://codepen.io/abeatrize/pen/LJqYey
-  var _a, _b;
-  // Bongo Cat originally created by @StrayRogue and @DitzyFlama
-  const ID = "bongo-cat";
-  const s = (selector) => `#${ID} ${selector}`;
-  const notes = document.querySelectorAll(".note");
-  for (let note of notes) {
-      (_a = note === null || note === void 0 ? void 0 : note.parentElement) === null || _a === void 0 ? void 0 : _a.appendChild(note.cloneNode(true));
-      (_b = note === null || note === void 0 ? void 0 : note.parentElement) === null || _b === void 0 ? void 0 : _b.appendChild(note.cloneNode(true));
-  }
-  const music = { note: s(".music .note") };
-  const cat = {
-      pawRight: {
-          up: s(".paw-right .up"),
-          down: s(".paw-right .down"),
-      },
-      pawLeft: {
-          up: s(".paw-left .up"),
-          down: s(".paw-left .down"),
-      },
-  };
-  const style = getComputedStyle(document.documentElement);
-  const green = style.getPropertyValue("--green");
-  const pink = style.getPropertyValue("--pink");
-  const blue = style.getPropertyValue("--blue");
-  const orange = style.getPropertyValue("--orange");
-  const cyan = style.getPropertyValue("--cyan");
-  gsap.set(music.note, { scale: 0, autoAlpha: 1 });
-  const animatePawState = (selector) => gsap.fromTo(selector, { autoAlpha: 0 }, {
-      autoAlpha: 1,
-      duration: 0.01,
-      repeatDelay: 0.19,
-      yoyo: true,
-      repeat: -1,
-  });
-  const tl = gsap.timeline();
-  tl.add(animatePawState(cat.pawLeft.up), "start")
-      .add(animatePawState(cat.pawRight.down), "start")
-      .add(animatePawState(cat.pawLeft.down), "start+=0.19")
-      .add(animatePawState(cat.pawRight.up), "start+=0.19")
-      .timeScale(1.6);
-  gsap.from(".terminal-code line", {
-      drawSVG: "0%",
-      duration: 0.1,
-      stagger: 0.1,
-      ease: "none",
-      repeat: -1,
-  });
-  // typing for pipe function doesn't seem to be working for usage when partially applied?
-  const noteElFn = gsap.utils.pipe(gsap.utils.toArray, gsap.utils.shuffle);
-  const noteEls = noteElFn(music.note);
-  const numNotes = noteEls.length / 3;
-  const notesG1 = noteEls.splice(0, numNotes);
-  const notesG2 = noteEls.splice(0, numNotes);
-  const notesG3 = noteEls;
-  const colorizer = gsap.utils.random([green, pink, blue, orange, cyan, "#a3a4ec", "#67b5c0", "#fd7c6e"], true);
-  const rotator = gsap.utils.random(-50, 50, 1, true);
-  const dir = (amt) => `${gsap.utils.random(["-", "+"])}=${amt}`;
-  const animateNotes = (els) => {
-      els.forEach((el) => {
-          gsap.set(el, {
-              stroke: colorizer(),
-              rotation: rotator(),
-              x: gsap.utils.random(-25, 25, 1),
-          });
-      });
-      return gsap.fromTo(els, {
-          autoAlpha: 1,
-          y: 0,
-          scale: 0,
-      }, {
-          duration: 2,
-          autoAlpha: 0,
-          scale: 1,
-          ease: "none",
-          stagger: {
-              from: "random",
-              each: 0.5,
-          },
-          rotation: dir(gsap.utils.random(20, 30, 1)),
-          x: dir(gsap.utils.random(40, 60, 1)),
-          y: gsap.utils.random(-200, -220, 1),
-          onComplete: () => animateNotes(els),
-      });
-  };
-  tl.add(animateNotes(notesG1)).add(animateNotes(notesG2), ">0.05").add(animateNotes(notesG3), ">0.25");
-  //# sourceURL=pen.js
-      </script>
-  
+        <script src="main.js"></script>
     
   
   
