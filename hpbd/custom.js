@@ -12,7 +12,6 @@ var w = c.width = window.innerWidth,
 				['HAPPY', 'BIRTHDAY!'],
 				['CHÚC MỪNG', 'SINH NHẬT'],
 				['生日快乐!'],
-				['DUNG', 'XINH GÁI'],
 			];
 
 			return sentences[sentenceIndex++ % sentences.length];
