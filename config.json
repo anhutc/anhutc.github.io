@@ -1,0 +1,42 @@
+{
+  "name": "Your Name",
+  "bio": "Welcome to my link tree! Connect with me across all platforms.",
+  "profileImage": "https://via.placeholder.com/120x120/667eea/ffffff?text=ME",
+  "links": {
+    "facebook": {
+      "url": "https://www.facebook.com/dangvananhs",
+      "title": "Facebook",
+      "description": "Follow me on Facebook"
+    },
+    "youtube": {
+      "url": "https://www.youtube.com/@dangvananhs",
+      "title": "YouTube",
+      "description": "Watch my videos"
+    },
+    "zalo": {
+      "url": "https://zalo.me/0971492399",
+      "title": "Zalo",
+      "description": "Connect on Zalo"
+    },
+    "instagram": {
+      "url": "https://www.instagram.com/dangvananhs",
+      "title": "Instagram",
+      "description": "Follow my journey"
+    },
+    "tiktok": {
+      "url": "https://www.tiktok.com/@dangvananhs",
+      "title": "TikTok",
+      "description": "Check out my TikTok"
+    },
+    "github": {
+      "url": "https://github.com/anhutc",
+      "title": "GitHub",
+      "description": "View my projects"
+    },
+    "cv": {
+      "url": "path/to/your/cv.pdf",
+      "title": "Curriculum Vitae",
+      "description": "Download my CV"
+    }
+  }
+} 
