@@ -109,13 +109,14 @@
                 </div>
             </a>
 
-            <a href="cv.html" class="link-card cv magnetic" id="cv-link">
+            <!-- CV Link Card (triggers modal) -->
+            <a href="#" class="link-card cv magnetic" id="cv-link">
                 <div class="link-icon">
                     <i class="fas fa-file-alt"></i>
                 </div>
                 <div class="link-content">
-                    <h3>View PDF CV</h3>
-                    <p>Open my CV in PDF format</p>
+                    <h3>Curriculum Vitae</h3>
+                    <p>Choose how to view my CV</p>
                 </div>
                 <div class="link-arrow">
                     <i class="fas fa-arrow-right"></i>
@@ -128,6 +129,47 @@
             <p>&copy; 2024 Your Name. All rights reserved.</p>
         </div>
     </div>
+
+    <!-- CV Options Modal -->
+    <div id="cv-modal" class="cv-modal" style="display:none;">
+      <div class="cv-modal-content">
+        <h2>View My CV</h2>
+        <button onclick="window.open('cv.html', '_blank')">
+          <i class="fas fa-globe"></i> Web CV
+        </button>
+        <button onclick="window.open('pdfjs/web/viewer.html?file=../../DANG-VAN-ANH-SMT.pdf', '_blank')">
+          <i class="fas fa-file-pdf"></i> PDF CV
+        </button>
+        <button class="cv-modal-close" onclick="closeCvModal()">Close</button>
+      </div>
+    </div>
+
+    <style>
+    .cv-modal {
+      position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+      background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; z-index: 9999;
+    }
+    .cv-modal-content {
+      background: #222; color: #fff; padding: 32px 24px; border-radius: 12px; text-align: center; min-width: 260px;
+    }
+    .cv-modal-content button {
+      margin: 12px 8px; padding: 12px 24px; border: none; border-radius: 6px; font-size: 1.1em; cursor: pointer;
+      background: #7877c6; color: #fff; transition: background 0.2s;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .cv-modal-content button:hover { background: #5a58a6; }
+    .cv-modal-close { background: #e74c3c !important; }
+    </style>
+
+    <script>
+    document.getElementById('cv-link').addEventListener('click', function(e) {
+      e.preventDefault();
+      document.getElementById('cv-modal').style.display = 'flex';
+    });
+    function closeCvModal() {
+      document.getElementById('cv-modal').style.display = 'none';
+    }
+    </script>
 
     <!-- Scripts -->
     <script src="script.js"></script>
