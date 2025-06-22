@@ -9,22 +9,6 @@ body {
     cursor: auto;
 }
 
-
-@keyframes cursorRipple {
-    0% {
-        width: 0;
-        height: 0;
-        opacity: 1;
-        transform: translate(-50%, -50%) scale(0);
-    }
-    100% {
-        width: 60px;
-        height: 60px;
-        opacity: 0;
-        transform: translate(-50%, -50%) scale(1);
-    }
-}
-
 /* Particle effects */
 .particles {
     position: fixed;
