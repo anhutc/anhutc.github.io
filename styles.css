@@ -229,47 +229,6 @@ body::before {
     100% { transform: rotate(360deg); }
 }
 
-.profile-image {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    margin: 0 auto 40px;
-    position: relative;
-    overflow: hidden;
-    border: 4px solid rgba(120, 119, 198, 0.3);
-    box-shadow: 
-        0 20px 40px rgba(0, 0, 0, 0.4),
-        0 0 0 1px rgba(120, 119, 198, 0.2),
-        inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-    animation: float 6s ease-in-out infinite;
-}
-
-.profile-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-}
-
-.profile-image:hover img {
-    transform: scale(1.05);
-}
-
-.profile-image::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 200px;
-    height: 200px;
-    background: radial-gradient(circle, rgba(120, 119, 198, 0.2) 0%, transparent 70%);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    animation: pulse 4s ease-in-out infinite;
-    z-index: -1;
-}
-
 .name {
     font-size: 3.5rem;
     font-weight: 800;
@@ -283,20 +242,6 @@ body::before {
     letter-spacing: -0.02em;
     position: relative;
     animation: textGlow 3s ease-in-out infinite alternate;
-}
-
-.bio {
-    font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.8);
-    line-height: 1.7;
-    max-width: 600px;
-    margin: 0 auto;
-    font-weight: 400;
-    position: relative;
-    white-space: normal;
-    overflow: visible;
-    border-right: none;
-    animation: none;
 }
 
 /* Links Grid - Modern Card Layout */
@@ -586,10 +531,6 @@ body::before {
         font-size: 2.5rem;
     }
     
-    .bio {
-        font-size: 1.1rem;
-    }
-    
     .links-section {
         grid-template-columns: 1fr;
         gap: 25px;
@@ -613,22 +554,11 @@ body::before {
     .link-content p {
         font-size: 0.95rem;
     }
-    
-    .profile-image {
-        width: 150px;
-        height: 150px;
-    }
 }
 
 @media (max-width: 480px) {
     .profile-section {
         padding: 30px 20px;
-    }
-    
-    .profile-image {
-        width: 120px;
-        height: 120px;
-        margin-bottom: 30px;
     }
     
     .name {
