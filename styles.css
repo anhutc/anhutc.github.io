@@ -9,32 +9,6 @@ body {
     cursor: auto;
 }
 
-/* Remove all custom cursor styles */
-.cursor,
-.cursor-follower,
-.cursor-trail,
-.cursor-ripple {
-    display: none !important;
-}
-
-/* Magnetic cursor effect */
-.magnetic {
-    transition: none;
-}
-
-.magnetic:hover {
-    transform: none;
-}
-
-/* Cursor ripple effect */
-.cursor-ripple {
-    position: fixed;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 9996;
-    animation: cursorRipple 0.5s ease-out forwards;
-}
 
 @keyframes cursorRipple {
     0% {
