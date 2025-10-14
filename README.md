@@ -127,7 +127,7 @@ anhutc.github.io/
 **Đặng Văn Ánh**
 - 🌐 Website: [https://anhutc.github.io/](https://anhutc.github.io/)
 - 💼 GitHub: [@anhutc](https://github.com/anhutc)
-- 📧 Email: [anhutck58@gmail.com](mail:anhutck58@gmail.com)
+- 📧 Email: [anhutck58@gmail.com](mailto:anhutck58@gmail.com)
 
 ## 📞 Liên Hệ
 
@@ -147,9 +147,3 @@ anhutc.github.io/
 </div>
 
 ---
-
-### 💡 Lưu ý cho bạn:
-1. **Thay thế thông tin**: Hãy cập nhật email và các thông tin cá nhân khác
-2. **Thêm ảnh chụp màn hình**: Bạn có thể thêm screenshot website vào README
-3. **Customize**: Tùy chỉnh màu sắc và nội dung theo ý thích
-4. **Deploy**: Website đã sẵn sàng chạy trên GitHub Pages
