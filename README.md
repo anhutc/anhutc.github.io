@@ -16,7 +16,7 @@
 
 ## ✨ Tính Năng Nổi Bật
 
-- **🎯 Hiệu ứng Magnetic**: Các phần tử có hiệu ứng "nam châm" khi di chuột qua
+- **🎯 Hiệu ứng Magnetic**: Các phần tử có hiệu ứng hay hay
 - **📱 Thiết kế Responsive**: Tương thích với mọi thiết bị
 - **⚡ Loading Screen**: Màn hình loading chuyên nghiệp
 - **🎨 UI/UX Hiện đại**: Giao diện đẹp mắt với animation mượt mà
@@ -165,5 +165,3 @@ Dự án được phân phối dưới giấy phép MIT. Xem file [LICENSE](LICE
 2. **Thêm ảnh chụp màn hình**: Bạn có thể thêm screenshot website vào README
 3. **Customize**: Tùy chỉnh màu sắc và nội dung theo ý thích
 4. **Deploy**: Website đã sẵn sàng chạy trên GitHub Pages
-
-Bạn có muốn tôi điều chỉnh thêm điều gì trong README này không?
