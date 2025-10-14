@@ -122,24 +122,12 @@ anhutc.github.io/
 - [ ] Contact form
 - [ ] Blog section
 
-### Contributing
-Đóng góp luôn được chào đón! Vui lòng:
-1. Fork dự án
-2. Tạo feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 Giấy Phép
-
-Dự án được phân phối dưới giấy phép MIT. Xem file [LICENSE](LICENSE) để biết thêm chi tiết.
-
 ## 👨‍💻 Tác Giả
 
 **Đặng Văn Ánh**
 - 🌐 Website: [https://anhutc.github.io/](https://anhutc.github.io/)
 - 💼 GitHub: [@anhutc](https://github.com/anhutc)
-- 📧 Email: [Thêm email của bạn]
+- 📧 Email: [anhutck58@gmail.com](mail:anhutck58@gmail.com)
 
 ## 📞 Liên Hệ
 
