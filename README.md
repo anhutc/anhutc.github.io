@@ -1,5 +1,3 @@
-Chào bạn! Dựa trên code website bạn cung cấp, tôi đã tạo file README.md phù hợp cho dự án của bạn:
-
 # Đặng Văn Ánh - Personal Portfolio
 
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-brightgreen?logo=github)](https://anhutc.github.io/)
