@@ -121,7 +121,7 @@
 
         <!-- Footer -->
         <div class="footer magnetic">
-            <p>&copy; 2025 DVA. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> DVA. All rights reserved.</p>
         </div>
     </div>
     
@@ -157,6 +157,7 @@
     </style>
      
     <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
     document.getElementById('cv-link').addEventListener('click', function(e) {
       e.preventDefault();
       document.getElementById('cv-modal').style.display = 'flex';
